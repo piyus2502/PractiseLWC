@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Parent">
+        <lightning-input label="input text" onchange={inputhandler}></lightning-input>
+        <lightning-input type='number' label="number daal" title="Daal be" onchange={numberbhej}></lightning-input>
+        <c-child-comp 
+        student-name={studentName}
+        crdetail={crdetail}
+        parentsemilega={parentsemilega}>
+    </c-child-comp>
+    <lightning-button label="Reset BAR" onclick={resetkar}></lightning-button>
+    </lightning-card>
+</template>

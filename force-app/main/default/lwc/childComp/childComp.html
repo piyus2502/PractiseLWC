@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Child">
+        <p>{studentName}</p>
+    </lightning-card>
+    <lightning-card>
+            <div class="slds-size_3-of-4">
+                <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">Basic Carousel
+                    <lightning-carousel>
+                        <template for:each={crdetail} for:item="item">
+                            <lightning-carousel-image
+                            src = {item.src}
+                            header = {item.header}
+                            description = {item.description}
+                            key = {item.header}>
+                        </lightning-carousel-image>
+                        </template>
+                        
+                    </lightning-carousel>
+                </div>
+            </div>
+            <lightning-progress-bar value={parentsemilega} size="large"></lightning-progress-bar>
+    </lightning-card>
+</template>
